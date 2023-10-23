@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: pink;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        nav ul li a:hover{
+            color: palevioletred;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 140px;
+            margin-bottom: 180px;
+
+        }
+        .firstSection div{
+            width: 30%;
+        }
+        .leftSection{
+            
+            font-size: 3rem;
+            justify-content: center;
+            margin: 100px 0;
+        }
+        .leftSection .button{
+          padding: 10px;
+          cursor: pointer;
+          border-radius: 6px;
+          margin-top: 30px;
+          margin-left: 75px;
+        }
+        .leftSection .button:hover{
+          background-color: pink;
+        }
+        .rightSection{
+        
+            width: 80%;
+         
+        }
+        img{
+            width: 300px;
+            height: 400px;
+        }
+        .pink{
+            color: rgb(201, 27, 56);
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element{
+            color: rgb(201, 27, 56);
+            
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+            margin-bottom: 250px;
+
+        }
+        main hr{
+            border: 2px;
+            height: 1.2px;
+            background-color: palevioletred;
+            margin: 40px 84px;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection .box{
+            background: palevioletred;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            background-color: palevioletred;
+            width: 1px;
+            height: 93px;
+            margin: 0 100px;
+        }
+        .image-top{
+            width: 23px;
+            height: 23px;
+            position: relative;
+            top: -32px;
+            left: -10px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 80px;
+            left: -10px;
+            width: 120px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            left: -10px;
+            width: 150px;
+            color: gray;
+            font-size: 12px;
+        }
+        .press{
+            position: relative;
+            top: 100px;
+            left: -10px;
+            padding: 10px;
+            cursor: pointer;
+          border-radius: 6px;
+        }
+        .press:hover{
+            background-color: pink;
+        }
+        .thirdSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 90vh;
+        }
+        .skills-heading {
+  font-size: 1.9rem;
+}
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: pink;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 90%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .bootstrap {
+  width: 50%;
+}
+.progress-line .javascript {
+  width: 30%;
+}
+.progress-line .python {
+  width: 70%;
+}
+.progress-line .wordpress {
+  width: 60%;
+}
+.progress-line .blogger {
+  width: 50%;
+}
+.progress-line .seo {
+  width: 40%;
+}
+
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #f0f0f0;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line .html::after {
+  content: "90%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "50%";
+}
+.progress-line .javascript::after {
+  content: "30%";
+}
+.progress-line .wordpress::after {
+  content: "60%";
+}
+.progress-line .blogger::after {
+  content: "50%";
+}
+.progress-line .python::after {
+  content: "70%";
+}
+.progress-line .seo::after {
+  content: "40%";
+}
+footer{
+    background: pink;
+    height: 600px;
+    width: 100vw;
+    padding-top: 40px;
+    color: black;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 17px;
+    color: black;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: black;
+    border: 1.1px solid black;
+    padding: 8px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.3rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+
+.footer-bottom{
+    background: pink;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Sameen's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skils">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="about">
+            
+            <div class="leftSection">Hi, I am <span class="pink">Sameen</span> Zahid and I am <br><span id="element"></span><br>
+              <a href="https://drive.google.com/file/d/12nvJXV-foa77wtUhGdczx1ogy2UYZApZ/view?usp=sharing"><button class="button">Download Resume
+              </button></a>
+            </div>
+            <div class="rightSection"><img src="img.png"></div>
+        </section>
+        <hr>
+        
+        <section class="thirdSection" id="skils">
+              <div>
+                <h1 class="skills-heading">My Skills</h1>
+              </div>
+              <div class="skills-bar">
+                <div class="bar">
+                  <div class="info">
+                    <span>HTML</span>
+                  </div>
+                  <div class="progress-line"><span class="html"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>CSS</span>
+                    </div>
+                    <div class="progress-line"><span class="css"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>BOOTSTRAP</span>
+                      </div>
+                      <div class="progress-line"><span class="bootstrap"></span></div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="progress-line"><span class="javascript"></span></div>
+                        <div class="bar">
+                          <div class="info">
+                            <span>PYTHON</span>
+                          </div>
+                          <div class="progress-line"><span class="python"></span></div>
+                          <div class="bar">
+                            <div class="info">
+                              <span>WORDPRESS</span>
+                            </div>
+                            <div class="progress-line"><span class="wordpress"></span></div>
+                            <div class="bar">
+                                <div class="info">
+                                  <span>BLOGGER</span>
+                                </div>
+                                <div class="progress-line"><span class="blogger"></span></div>
+                                <div class="bar">
+                                    <div class="info">
+                                      <span>SEO</span>
+                                    </div>
+                                    <div class="progress-line"><span class="seo"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </section><hr>
+            <section class="secondSection" id="project">
+              <!-- <span class="text-gray">What I have done so far</span> -->
+              <h1>Work Experience</h1>
+              <div class="box">
+                  <div class="vertical">
+                      <img src="aspnet.png" alt="" class="image-top">
+                      <div class="vertical-title">Online Food Ordering System</div>
+                      <div class="vertical-desc">It's an online food ordering system. In this site, I used Html, CSS, C# and MySql for database.</div>
+                      <a href="https://github.com/sameenzahid/ASP.NET-Assignment"><input type="button" value="View Source Code" class="press"></a>
+                  </div>
+                  <div class="vertical">
+                      <img src="web.png" alt="" class="image-top">
+                      <div class="vertical-title">Audio and Video Ads Generator</div>
+                      <div class="vertical-desc">It's a front-end of audio and video ads generator. In this site, I used Html, CSS and Javascript.</div>
+                      <a href="https://github.com/sameenzahid/cuppa"><input type="button" value="View Source Code" class="press"></a>
+                  </div>
+                  <div class="vertical">
+                      <img src="mobile.png" alt="" class="image-top">
+                      <div class="vertical-title">Android Assignment</div>
+                      <div class="vertical-desc">It's a small app in which I showed some animals and their details. In this app, I used Java and XML.</div>
+                      <a href="https://github.com/sameenzahid/Android-Assignment"><input type="button" value="View Source Code" class="press"></a>
+                  </div>
+                  <div class="vertical">
+                      <img src="python.png" alt="" class="image-top">
+                      <div class="vertical-title">Python Assignment</div>
+                      <div class="vertical-desc">It's my semester assignment of python algorithms and libraries such as Pandas, Numpy and Sckitlearn.</div>
+                      <a href="https://github.com/sameenzahid/Python-Assignment"><input type="button" value="View Source Code" class="press"></a>
+                  </div>
+                  <div class="vertical">
+                      <img src="hackhton.jpg" alt="" class="image-top">
+                      <div class="vertical-title">CUPPA.AI</div>
+                      <div class="vertical-desc">It's Hackhton project in which I work on frontend and my teammates work on Backend and Presentations. Its a proper AI Ads generator site in which we used many technologies. </div>
+                      <a href="https://github.com/sameenzahid/Hackathon-Project"><input type="button" value="View Source Code" class="press"></a>
+                  </div>
+              </div>
+          </section>
+  
+        </main>
+        <footer id="contact">
+          <div class="footer-content">
+              <h3>Contact Info</h3>
+              <p>+92 322 6215075<br>
+                sameenzahid28@gmail.com<br>
+                Faisalabad, Pakistan
+              </p>
+             
+              <ul class="socials">
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/sameenzahid"><i class="fa fa-github"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>copyright &copy; <a href="#">Sameen Zahid</a>  </p>
+                      
+          </div>
+  
+      </footer>
+</body>
+</html>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer ','WP Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
